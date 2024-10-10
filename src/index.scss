@@ -1,0 +1,30 @@
+@import "./constants.scss";
+
+@font-face {
+  font-family: arsenal;
+  src: url("./assets/fonts/Arsenal-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: arsenal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-background);
+  overflow-y: hidden;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  body {
+    overflow-y: scroll;
+  }
+}
+
+/* Disable hover for touch devices */
+.touch-device .element:hover {
+  background-color: initial; /* Reset or remove the hover styles */
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}

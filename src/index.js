@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.scss';
+import "./theme.scss"
+import App from './App.tsx';
+import { LayoutProvider } from "./contexts/LayoutContext.tsx"
+import { ThemeProvider } from "./contexts/ThemeContext.tsx"
+import reportWebVitals from './reportWebVitals.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <LayoutProvider>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </LayoutProvider>
   </React.StrictMode>
 );
 

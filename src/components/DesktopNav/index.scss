@@ -1,0 +1,18 @@
+
+.desktop-nav-wrapper {
+ display: flex;
+ flex-direction: column;
+
+ .link {
+  text-decoration: none;
+  color: var(--primary-text);
+  text-transform: uppercase;
+  &.active {
+   font-weight: bold;
+   color: var(--highlight-text);
+  }
+  &:hover {
+   opacity: 0.9;
+  }
+ }
+}

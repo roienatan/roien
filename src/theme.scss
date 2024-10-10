@@ -1,0 +1,16 @@
+:root[data-theme="light"] {
+ --primary-text: #000000;
+ --secondary-text: #64748B;
+ --primary-background: #eaeaea;
+ --highlight-text: #1e3a8a;
+ --secondary-background: rgba(30, 58, 138, 0.1);
+
+}
+
+:root[data-theme="dark"] {
+ --primary-text: #FFFFFF;
+ --secondary-text: #64748B;
+ --primary-background: #282c34;
+ --highlight-text: #5ECED4;
+ --secondary-background: rgba(45, 212, 191, .1);
+}

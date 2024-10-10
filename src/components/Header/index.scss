@@ -1,0 +1,31 @@
+@import "../../constants.scss";
+
+.header-wrapper {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 3rem;
+
+ .header-bottom {
+  .social-wrapper {
+   display: flex;
+
+   a {
+    text-decoration: none;
+    color: var(--primary-text);
+    margin-right: 0.25rem;
+
+    &:hover {
+     opacity: 0.8;
+    }
+   }
+  }
+ }
+}
+
+
+@media only screen and (max-width: $mobile-breakpoint) {
+ .header-wrapper {
+  padding: 1.5rem;
+ }
+}
